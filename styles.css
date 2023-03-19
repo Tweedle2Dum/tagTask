@@ -9,6 +9,7 @@
     --font-sidebar : 20px;
     --icon-padding-sidebar : 5px 15px 5px 0px;
     --underline : 1px solid  #4b4949;
+    --playbar :  rgb(29, 28, 28);
 }
 
 html {
@@ -42,6 +43,13 @@ li {
  :link , :visited , :active {
     color: whitesmoke;
     text-decoration: none;
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1em;
 }
 
 .sidebar {
@@ -95,8 +103,29 @@ li {
     bottom: 0;
     min-height: 100px;
     width: 100%;
-    background-color: red;
+    background-color: var(--playbar);
      
+}
+
+.main > .content > .header {
+     display: flex;
+
+}
+
+.header {
+    padding: 20px 0 0 0;
+}
+
+.header > .left-group > i {
+    font-size: 1.5rem;
+    background-color:var(--color-inactive);
+    padding: 10px;
+    border-radius: 100%;
+    margin: 0 16px 0 0;
+}
+
+.header > .right-group {
+    margin-left: auto;
 }
 
 
