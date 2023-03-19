@@ -53,14 +53,7 @@ li {
     padding: var(--icon-padding-sidebar);
 }
 
-.sidebar > .album-cover {
-    max-width: 300px;
-}
 
-.sidebar img {
-    width: 100%;
-    object-fit: contain;
-}
 
 .link-container-1 {
     font-size: var(--font-sidebar);
@@ -70,13 +63,40 @@ li {
 
 
 
-.link-container-1 > li:nth-child(4) {
+.link-container-1 > li:nth-child(5) {
     margin-top: 16px;
 }
 
 .link-container-2 {
     font-size: var(--font-sidebar);
     padding:5px 5px 10px 0px;
+}
+
+.dots {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.footer-wrapper {
+    position: relative;
+}
+
+.sidebar > .album-cover {
+    max-width: 300px;
+}
+
+.sidebar img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.footer-wrapper > footer  {
+    position: fixed;
+    bottom: 0;
+    min-height: 100px;
+    width: 100%;
+    background-color: red;
+     
 }
 
 
