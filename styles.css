@@ -18,7 +18,7 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
-    /* outline: 1px solid red; */
+     outline: 1px solid red; 
   
 
 }
@@ -107,14 +107,17 @@ li {
      
 }
 
+.content {
+    padding: 0 100px 0 0;
+}
+
 .main > .content > .header {
      display: flex;
-
+     align-items: center;
+     padding: 20px 0 0 0;
 }
 
-.header {
-    padding: 20px 0 0 0;
-}
+
 
 .header > .left-group > i {
     font-size: 1.5rem;
@@ -124,7 +127,70 @@ li {
     margin: 0 16px 0 0;
 }
 
+.header > .right-group  i {
+    margin: 0 10px;
+
+}
+
 .header > .right-group {
+    margin-left: auto;
+    font-size: 1.3em;
+}
+
+.header > .right-group > .user {
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.header > .right-group > .user > .name {
+    display: inline-block;
+}
+
+.right-group {
+    position: relative;
+}
+
+
+.user-nav-wrapper {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    
+}
+.right-group:hover  .user-nav-wrapper {
+    display: block;
+    width: 250px;
+    transform: translate(0,20px);
+}
+
+
+.content > .card-container-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    gap: 1.5em;
+}
+
+.card-container-1 > div {
+    height: 100px;
+    display: flex;
+    font-size: var(--font-sidebar);
+    align-items: center;
+    gap: 16px;
+}
+
+.card-container-1 > div > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.content > .sub-header {
+    display: flex;
+    align-items: center;
+}
+
+.sub-header > .show {
     margin-left: auto;
 }
 
