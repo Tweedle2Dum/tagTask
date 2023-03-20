@@ -10,6 +10,7 @@
     --icon-padding-sidebar : 5px 15px 5px 0px;
     --underline : 1px solid  #4b4949;
     --playbar :  rgb(29, 28, 28);
+    --card-set1: rgba(29, 28, 28, 0.5);
 }
 
 html {
@@ -36,6 +37,12 @@ ul {
 li {
     list-style: none;
     padding: 8px 8px 8px 8px;
+}
+
+
+a:hover {
+    opacity: 0.7;
+    
 }
 
 
@@ -121,11 +128,17 @@ li {
 
 .header > .left-group > i {
     font-size: 1.5rem;
-    background-color:var(--color-inactive);
+    background-color:var(--playbar);
     padding: 10px;
     border-radius: 100%;
     margin: 0 16px 0 0;
 }
+.header > .left-group > i:hover {
+    opacity: 0.7;
+
+}
+
+
 
 .header > .right-group  i {
     margin: 0 10px;
@@ -133,13 +146,24 @@ li {
 }
 
 .header > .right-group {
+    background-color: rgba(29, 28, 28, 0.5);
+    border-radius: 12px;
     margin-left: auto;
     font-size: 1.3em;
+    cursor: pointer;
+
 }
 
 .header > .right-group > .user {
     border-radius: 12px;
     padding: 4px;
+}
+
+
+.header > .right-group > .user > i:nth-child(1) {
+    background-color: #4b4949;
+    border-radius: 100%;
+    padding: 5px;
 }
 
 .header > .right-group > .user > .name {
@@ -154,15 +178,28 @@ li {
 .user-nav-wrapper {
     display: none;
     position: absolute;
+    background-color: rgba(29, 28, 28, 1);
+    box-shadow: 0 0 14px black;
     z-index: 999;
     right: 0;
     top: 100%;
     
 }
+
+.user-nav-wrapper > div {
+    padding: 0 0 10px 0;
+    cursor: pointer;
+
+}
+
+.right-group:hover {
+    background-color: #4b4949;
+}
+
 .right-group:hover  .user-nav-wrapper {
     display: block;
     width: 250px;
-    transform: translate(0,20px);
+    transform: translate(0,5px);
 }
 
 
@@ -175,9 +212,16 @@ li {
 .card-container-1 > div {
     height: 100px;
     display: flex;
+    border-radius: 12px;
     font-size: var(--font-sidebar);
     align-items: center;
     gap: 16px;
+    background-color: var(--card-set1);
+}
+
+.card-container-1 > div:hover {
+    background-color: rgba(40, 40, 40, 0.4);
+    box-shadow: 0 0 14px rgba(29, 28, 28, 0.5);
 }
 
 .card-container-1 > div > img {
@@ -193,6 +237,11 @@ li {
 
 .sub-header > .show {
     margin-left: auto;
+}
+
+.sub-header > .show:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 
