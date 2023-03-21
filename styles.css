@@ -72,7 +72,8 @@ a:hover {
 .main {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 1em;
+    gap: 3em;
+    row-gap: 5.4em;
 }
 
 .sidebar {
@@ -101,7 +102,7 @@ a:hover {
 .link-container-2 {
     font-size: var(--font-sidebar);
     padding:5px 5px 10px 0px;
-    max-height: 125px;
+    max-height: 300px;
     overflow: scroll;
 }
 
@@ -115,19 +116,22 @@ a:hover {
 }
 
 footer > .album-cover {
+    border-radius: 12px;
     max-width: 300px;
     position: absolute;
     bottom:95%;
 }
 
 footer img {
+    border-radius: 12px;
     width: 100%;
     object-fit: contain;
 }
 
 .footer-wrapper > footer  {
-    position: fixed;
-    bottom: 0;
+
+     position: fixed;
+     bottom: 0;
     min-height: 100px;
     width: 100%;
     background-color: var(--playbar);
@@ -209,6 +213,11 @@ footer img {
 .user-nav-wrapper > div {
     padding: 0 0 10px 0;
     cursor: pointer;
+
+}
+
+.user-nav-wrapper li:hover {
+    opacity: 0.7;
 
 }
 
