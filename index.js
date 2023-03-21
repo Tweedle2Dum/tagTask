@@ -3,6 +3,9 @@ function hoverCard(event){
     //randome color one-liner
     const randomColor = randomColors[Math.floor(Math.random() * randomColors.length)];
     //changing the color of the blob on the top
+    if(blobCover.style.opacity!==1){
+        blobCover.style.opacity=1
+    }
 
     blob.style.backgroundImage = `linear-gradient(to bottom right,${randomColor},white)`;
     blobCover.style.opacity = 0.3
@@ -10,10 +13,18 @@ function hoverCard(event){
 
 
 function leaveCard(event){
-    blob.style.backgroundImage = `linear-gradient(to bottom right,green,white)`;
-    blobCover.style.opacity = 0.0
+   
 
+     if (blobCover.style.opacity!==1){
+        blobCover.style.opacity=1;
+        blob.style.backgroundImage = `linear-gradient(to bottom right,${randomColor},white)`;
 
+    }
+   
+
+    blobCover.style.opacity = 0.3; 
+      
+    
 }
 
 

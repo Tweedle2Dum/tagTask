@@ -75,12 +75,12 @@ a:hover {
     border-radius: 100%;
     background-image: linear-gradient(to bottom right , black, black);
     filter: blur(100px);
-    opacity: 0.4;
+    opacity: 1;
     height: 500px;
     width: 100%;
     transform: translate(0,-50%);
     z-index: -999;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease-in-out;
 }
 
