@@ -69,6 +69,26 @@ a:hover {
 }
 
 
+.cover {
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom right , black, black);
+    filter: blur(100px);
+    opacity: 0.4;
+    height: 500px;
+    width: 100%;
+    transform: translate(0,-50%);
+    z-index: -999;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+
+
+
+
 .main {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -104,6 +124,7 @@ a:hover {
     padding:5px 5px 10px 0px;
     max-height: 300px;
     overflow: scroll;
+    scrollbar-width: 20px;
 }
 
 .dots {
