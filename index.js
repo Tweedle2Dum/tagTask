@@ -17,7 +17,7 @@ function leaveCard(event){
 
      if (blobCover.style.opacity!==1){
         blobCover.style.opacity=1;
-        blob.style.backgroundImage = `linear-gradient(to bottom right,${randomColor},white)`;
+        blob.style.backgroundImage = `linear-gradient(to bottom right,black,black)`;
 
     }
    
@@ -33,7 +33,6 @@ function leaveCard(event){
 // selecting all the elements i am going to work with!
 const blob = document.querySelector(".blob");
 const blobCover = document.querySelector(" .cover");
-console.log(blobCover)
 const cards = document.querySelectorAll("div.card-container-1 > div");//nodelist of all the cards in the 1st container
 
 

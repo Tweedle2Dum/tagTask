@@ -238,7 +238,7 @@ footer img {
 
 }
 
-.user-nav-wrapper li:hover {
+.user-nav-wrapper li:hover{
     opacity: 0.7;
 
 }
@@ -249,8 +249,10 @@ footer img {
 
 .right-group:hover  .user-nav-wrapper {
     display: block;
+    border-radius: 12px;
+    padding: 4px;
     width: 250px;
-    transform: translate(0,5px);
+    transform: translate(0,1px);
 }
 
 
@@ -395,6 +397,18 @@ footer .buttons > i:nth-child(4) {
     background-color: grey;
     animation: roundtime calc(var(--duration)*1s) linear forwards;
 }
+
+@keyframes roundtime {
+    /* code goes in here for animation of the timer bar */
+
+}
+
+
+footer i:hover {
+    opacity: 0.7;
+    
+} 
+    
 
 
 
